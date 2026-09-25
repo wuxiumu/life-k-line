@@ -1,0 +1,12 @@
+Life K-Line
+Copyright 2026 Life K-Line Contributors
+
+This project is inspired by the open-source Life Destiny K-Line project:
+https://github.com/miounet11/life-kline
+
+The new implementation keeps the product surface intentionally small and uses
+an independently structured browser-only engine. Life Destiny K-Line is
+licensed under the Apache License, Version 2.0.
+
+This project includes lunar-javascript, distributed under the MIT License.
+https://github.com/6tail/lunar-javascript

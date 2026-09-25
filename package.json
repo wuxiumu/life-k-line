@@ -1,0 +1,28 @@
+{
+  "name": "life-k-line",
+  "private": false,
+  "version": "0.2.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "A bilingual, open-source life timing chart that runs entirely in the browser.",
+  "author": "Life K-Line Contributors <wuxiumu@163.com>",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit --pretty false"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "lunar-javascript": "^1.6.12",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}

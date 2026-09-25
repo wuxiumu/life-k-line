@@ -1,0 +1,61 @@
+import type { Locale } from './types'
+
+const zh = {
+  brandSub: '把人生周期画成一张图', openSource: '开源项目', contact: '联系维护者',
+  today: '今日节奏', timeline: '人生全景', bonds: '关系合盘',
+  todayShort: '今天', timelineShort: '全景', bondsShort: '合盘',
+  todayTag: '每天 15 秒，看清当下节奏', timelineTag: '从现在看向更长的人生周期', bondsTag: '看见两个人的协同与差异',
+  todayHero: '今天，把力气放对地方。', timelineHero: '看见趋势，选择下一步。', bondsHero: '理解差异，让关系更轻松。',
+  todayBody: '查看今日重点、7 日节奏和六个生活维度。结果每天更新，数据只在浏览器中处理。',
+  timelineBody: '在 18 年、10 年和 1 年尺度上查看事业、财富、关系、身心、成长与环境变化。',
+  bondsBody: '加入第二个人的出生信息，查看六个关系维度和未来 12 个月的相处节奏。',
+  demoBadge: '示范模式', customBadge: '个人模式', demoHint: '先看完整效果，再生成你的版本。',
+  primaryProfile: '你的资料', secondaryProfile: '对方资料', name: '怎么称呼', namePlaceholder: '例如：小木', partnerPlaceholder: '例如：小林',
+  birthDate: '出生日期', birthTime: '出生时间', gender: '性别', female: '女', male: '男', other: '其他',
+  relationshipType: '关系类型', partner: '伴侣', friend: '朋友', family: '家人', coworker: '同事',
+  generate: '生成结果', resetDemo: '恢复示范', privacy: '无需注册 · 本地计算 · 不上传出生信息', required: '请填写完整的出生日期和时间。',
+  resultFor: '结果属于', share: '分享结果', copied: '链接已复制', currentRhythm: '当前节奏',
+  sevenDay: '7 日趋势', nextTwelve: '未来 12 个月', dimensions: '六个维度', keyMoments: '关键节点',
+  actions: '行动建议', insights: '解读', dataMatrix: '年度数据矩阵', basis: '结果说明',
+  career: '事业', wealth: '财富', relationships: '关系', wellbeing: '身心', growth: '成长', environment: '环境',
+  chemistry: '默契', communication: '沟通', trust: '信任', rhythm: '节奏', sharedGrowth: '共同成长', boundaries: '边界',
+  overall: '综合', change: '变化', score: '分数', current: '当前', age: '岁',
+  range18y: '18 年', range10y: '10 年', range1y: '1 年',
+  dimensionView: '查看维度', allDimensions: '维度详情', trendUp: '上升', trendDown: '回落', trendFlat: '平稳',
+  personA: '我', personB: '对方', relationOverview: '关系总览',
+  todayQuestion: '今日反思', todayQuestionBody: '现在最值得集中注意力的事情是什么？',
+  localEngine: '本地确定性引擎', mediumConfidence: '参考级',
+  disclaimer: '结果用于娱乐和自我反思，不构成医疗、法律、财务或人生决策建议。', footerLine: '简单、开放、可部署。',
+} as const
+
+const en: Record<keyof typeof zh, string> = {
+  brandSub: 'Your life cycles, drawn clearly', openSource: 'Open source', contact: 'Contact maintainer',
+  today: 'Today', timeline: 'Timeline', bonds: 'Bonds',
+  todayShort: 'Today', timelineShort: 'Timeline', bondsShort: 'Bonds',
+  todayTag: '15 seconds to read today’s rhythm', timelineTag: 'See the longer arc around this moment', bondsTag: 'See how two people align and differ',
+  todayHero: 'Put your energy where it matters today.', timelineHero: 'See the pattern. Choose your next move.', bondsHero: 'Understand the difference. Strengthen the bond.',
+  todayBody: 'See today’s focus, your 7-day rhythm, and six life dimensions. Results refresh daily and stay in your browser.',
+  timelineBody: 'Explore career, wealth, relationships, wellbeing, growth, and environment across 18-year, 10-year, and 1-year views.',
+  bondsBody: 'Add another person to explore six relationship dimensions and your shared rhythm over the next 12 months.',
+  demoBadge: 'Demo mode', customBadge: 'Personal mode', demoHint: 'Explore the complete result, then make it yours.',
+  primaryProfile: 'Your profile', secondaryProfile: 'Their profile', name: 'Name', namePlaceholder: 'e.g. Alex', partnerPlaceholder: 'e.g. Jamie',
+  birthDate: 'Date of birth', birthTime: 'Time of birth', gender: 'Gender', female: 'Female', male: 'Male', other: 'Other',
+  relationshipType: 'Relationship', partner: 'Partner', friend: 'Friend', family: 'Family', coworker: 'Coworker',
+  generate: 'Generate result', resetDemo: 'Restore demo', privacy: 'No account · Local calculation · Birth data is never uploaded', required: 'Please provide complete birth dates and times.',
+  resultFor: 'Result for', share: 'Share result', copied: 'Link copied', currentRhythm: 'Current rhythm',
+  sevenDay: '7-day rhythm', nextTwelve: 'Next 12 months', dimensions: 'Six dimensions', keyMoments: 'Key moments',
+  actions: 'Action plan', insights: 'Interpretation', dataMatrix: 'Year-by-year matrix', basis: 'How to read this',
+  career: 'Career', wealth: 'Wealth', relationships: 'Relationships', wellbeing: 'Wellbeing', growth: 'Growth', environment: 'Environment',
+  chemistry: 'Chemistry', communication: 'Communication', trust: 'Trust', rhythm: 'Rhythm', sharedGrowth: 'Shared growth', boundaries: 'Boundaries',
+  overall: 'Overall', change: 'Change', score: 'Score', current: 'Now', age: 'yrs',
+  range18y: '18 years', range10y: '10 years', range1y: '1 year',
+  dimensionView: 'View dimension', allDimensions: 'Dimension detail', trendUp: 'Up', trendDown: 'Down', trendFlat: 'Steady',
+  personA: 'Me', personB: 'Other', relationOverview: 'Bond overview',
+  todayQuestion: 'Reflection prompt', todayQuestionBody: 'What deserves the clearest share of your attention right now?',
+  localEngine: 'Local deterministic engine', mediumConfidence: 'Reference level',
+  disclaimer: 'For entertainment and self-reflection only. Not medical, legal, financial, or life advice.', footerLine: 'Simple, open, deployable.',
+}
+
+export type Messages = typeof zh
+export type MessageKey = keyof Messages
+export const getMessages = (locale: Locale): Messages => (locale === 'zh' ? zh : en) as Messages
