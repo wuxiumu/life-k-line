@@ -174,3 +174,8 @@ A：默认不含；按各项目说明自行配置。
 |---|---|
 | ![微信赞赏码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185236_31_227.png) | ![支付宝收款码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185309_32_227.jpg) |
 
+
+
+## 下一步优化
+
+深优化清单（文档先行，代码下一轮）：[docs/OPTIMIZATION.md](docs/OPTIMIZATION.md)
