@@ -10,7 +10,8 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit --pretty false"
+    "typecheck": "tsc --noEmit --pretty false",
+    "smoke": "bash scripts/smoke.sh"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

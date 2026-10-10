@@ -27,6 +27,14 @@ Every mode includes a complete demo. Users can explore the product before enteri
 - Extensible: each mode returns the versioned `ReadingResultV1` contract.
 - Responsible: low scores are reset windows, not deterministic predictions.
 
+
+## 冒烟自检
+
+```bash
+bash scripts/smoke.sh
+# 或 npm run smoke
+```
+
 ## Local development
 
 ```bash
